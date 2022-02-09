@@ -1,0 +1,77 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <!-- Заголовок страницы, контейнер для других важных данных(не отображается) -->
+    <head> 
+        <!-- Заголовок страницы в браузере -->
+        <title>Лабараторная 2</title>
+        <!-- Кодировка страницы -->
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/> 
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        </head>
+        <body>
+
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'tab1')">tab1</button>
+          <button class="tablinks" onclick="openTab(event, 'tab2')">tab2</button>
+          <button class="tablinks" onclick="openTab(event, 'tab3')">tab3</button>
+        </div>
+        
+        <div id="tab1" class="tabcontent">
+          <h3>samlpe content 1</h3>
+          <p>rchitecto dolor officiis quilor pariatur, lablor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea sunt, eligendi accusabusdam deserunt saepe id quae? Delectus, minus?</p>
+        </div>
+        
+        <div id="tab2" class="tabcontent">
+          <h3>samlpe content 2</h3>
+          <p>Lorem ipsum dolo lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea s lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea s pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea sr pariatur, laboriosam ea sunt, eligendi accusantium iusto tempore a</p> 
+        </div>
+        
+        <div id="tab3" class="tabcontent">
+          <h3>samlpe content 3</h3>
+          <p>sit amet consectet lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea s lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            lor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea suntlor officiis quilor pariatur, laboriosam ea sunt
+            oriosam ea sur adipislor pariatur, laboriosam ea sunt, eligendi accusaicing elit. At eum fugit, cum </p>
+        </div>
+        
+        <script>
+        function openTab(evt, TabName) {
+
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(TabName).style.display = "block";
+             evt.currentTarget.className += " active";
+        }
+        </script>
+
+        
+    </body>
+
+</html>
